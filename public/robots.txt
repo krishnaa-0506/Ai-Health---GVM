@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cooksy-ai.com/sitemap.xml

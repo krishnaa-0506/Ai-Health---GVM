@@ -1,0 +1,44 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Chef Hat -->
+  <path d="M50 80C50 65 62 53 77 53C82 48 89 45 97 45C105 45 112 48 117 53C132 53 144 65 144 80C144 85 142 89 139 93V110C139 115 135 119 130 119H64C59 119 55 115 55 110V93C52 89 50 85 50 80Z" fill="#F5F5F5" stroke="#4A4A4A" stroke-width="4"/>
+  
+  <!-- Chef Hat Smile -->
+  <path d="M80 75C80 72 82 70 85 70C88 70 90 72 90 75" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M104 75C104 72 106 70 109 70C112 70 114 72 114 75" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M85 85C90 88 104 88 109 85" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Face -->
+  <circle cx="97" cy="140" r="35" fill="#E8A882" stroke="#4A4A4A" stroke-width="4"/>
+  
+  <!-- Eyes -->
+  <circle cx="88" cy="132" r="3" fill="#4A4A4A"/>
+  <circle cx="106" cy="132" r="3" fill="#4A4A4A"/>
+  
+  <!-- Eyebrows -->
+  <path d="M83 125L93 127" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M101 127L111 125" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Nose -->
+  <path d="M97 138C97 140 95 142 93 142" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Mustache -->
+  <path d="M85 148C90 145 97 145 97 148C97 145 104 145 109 148" fill="#8B4513" stroke="#4A4A4A" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M92 155C95 157 99 157 102 155" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Ears -->
+  <ellipse cx="67" cy="140" rx="8" ry="12" fill="#E8A882" stroke="#4A4A4A" stroke-width="3"/>
+  <ellipse cx="127" cy="140" rx="8" ry="12" fill="#E8A882" stroke="#4A4A4A" stroke-width="3"/>
+  
+  <!-- Chef Coat -->
+  <path d="M62 175C62 170 66 166 71 166H123C128 166 132 170 132 175V190C132 195 128 199 123 199H71C66 199 62 195 62 190V175Z" fill="#FFFFFF" stroke="#4A4A4A" stroke-width="4"/>
+  
+  <!-- Chef Coat Buttons -->
+  <circle cx="85" cy="180" r="2" fill="#4A4A4A"/>
+  <circle cx="85" cy="190" r="2" fill="#4A4A4A"/>
+  
+  <!-- Neckerchief -->
+  <path d="M75 166C75 166 85 160 97 160C109 160 119 166 119 166L115 175C110 172 104 170 97 170C90 170 84 172 79 175L75 166Z" fill="#FF6B47" stroke="#4A4A4A" stroke-width="3"/>
+  <circle cx="97" cy="175" r="4" fill="#FF6B47" stroke="#4A4A4A" stroke-width="2"/>
+</svg>

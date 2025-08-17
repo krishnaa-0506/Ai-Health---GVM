@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Indian spice-inspired color palette */
+    --background: 35 100% 98%;
+    --foreground: 20 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 15% 15%;
+
+    /* Saffron primary theme */
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 100% 70%;
+
+    /* Turmeric secondary */
+    --secondary: 45 95% 85%;
+    --secondary-foreground: 20 15% 15%;
+
+    /* Mint green muted */
+    --muted: 150 25% 92%;
+    --muted-foreground: 20 15% 45%;
+
+    /* Cardamom accent */
+    --accent: 140 35% 75%;
+    --accent-foreground: 20 15% 15%;
+
+    /* Curry red destructive */
+    --destructive: 5 85% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Subtle borders */
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 25 95% 55%;
+
+    /* Enhanced radius for modern feel */
+    --radius: 1rem;
+
+    /* Indian-inspired gradients */
+    --gradient-spice: linear-gradient(135deg, hsl(25 95% 55%), hsl(45 90% 65%), hsl(5 85% 58%));
+    --gradient-mint: linear-gradient(135deg, hsl(140 35% 75%), hsl(150 25% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 55%) 0%, hsl(30 100% 70%) 50%, hsl(140 35% 75%) 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+
+    /* Elegant shadows with spice colors */
+    --shadow-saffron: 0 20px 40px -10px hsl(25 95% 55% / 0.3);
+    --shadow-mint: 0 10px 30px -5px hsl(140 35% 75% / 0.2);
+    --shadow-glass: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with warm Indian spice tones */
+    --background: 20 25% 8%;
+    --foreground: 35 15% 92%;
+
+    --card: 20 25% 10%;
+    --card-foreground: 35 15% 92%;
+
+    --popover: 20 25% 10%;
+    --popover-foreground: 35 15% 92%;
+
+    --primary: 25 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 30 100% 70%;
+
+    --secondary: 20 20% 18%;
+    --secondary-foreground: 35 15% 92%;
+
+    --muted: 20 20% 15%;
+    --muted-foreground: 35 10% 65%;
+
+    --accent: 140 35% 65%;
+    --accent-foreground: 35 15% 92%;
+
+    --destructive: 5 85% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 20% 18%;
+    --input: 20 20% 18%;
+    --ring: 25 95% 55%;
+
+    /* Dark mode gradients */
+    --gradient-spice: linear-gradient(135deg, hsl(25 95% 45%), hsl(45 80% 55%), hsl(5 75% 48%));
+    --gradient-mint: linear-gradient(135deg, hsl(140 35% 65%), hsl(150 25% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 95% 45%) 0%, hsl(30 90% 60%) 50%, hsl(140 35% 55%) 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+
+    --shadow-saffron: 0 20px 40px -10px hsl(25 95% 45% / 0.4);
+    --shadow-mint: 0 10px 30px -5px hsl(140 35% 55% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted)));
+    min-height: 100vh;
+  }
+
+  /* Glassmorphism utility classes */
+  .glass {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Spice-themed animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-spice-glow {
+    animation: spice-glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+
+  @keyframes spice-glow {
+    0% { box-shadow: var(--shadow-saffron); }
+    100% { box-shadow: var(--shadow-mint); }
+  }
+
+  /* Indian pattern decorations */
+  .mandala-bg {
+    background-image: radial-gradient(circle at 25% 25%, hsl(var(--primary-glow) / 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, hsl(var(--accent) / 0.1) 0%, transparent 50%);
+  }
+}

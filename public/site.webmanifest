@@ -1,0 +1,32 @@
+{
+  "name": "Cooksy AI - Indian Meal Planner",
+  "short_name": "Cooksy AI",
+  "description": "AI-powered Indian meal planning and recipe discovery",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png", 
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FF6B47",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
